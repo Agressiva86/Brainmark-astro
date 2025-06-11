@@ -9,11 +9,28 @@ import brainmarkLogo from "../assets/brainmark_logo.svg";
             <h1 class="text-3xl font-semibold text-violet-950">
                 Brainmark <spam
                     class="block text-xs tracking-wider opacity-30 font-normal"
-                    >astro personal template</spam>
+                    >astro personal template</spam
+                >
             </h1>
         </a>
     </div>
     <div class="lg:basis-2/3 lg:justify-items-end">
-        <span>02</span>
+        <label for="toggleB" class="flex items-center cursor-pointer">
+            <div class="relative">
+                <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
+                <div
+                    class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"
+                >
+                </div>
+            </div>
+            <div class="ml-3 text-gray-700 font-medium">Toggle Me!</div>
+        </label>
     </div>
 </header>
+
+<style>
+    input:checked ~ .dot {
+        transform: translateX(100%);
+        background-color: #48bb78;
+    }
+</style>
