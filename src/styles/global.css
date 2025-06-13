@@ -5,3 +5,8 @@
 @theme {
   --font-inter: "Inter", sans-serif; 
 }
+
+@plugin "tailwindcss-palette-generator" {
+  primary: #FFBD00;
+  secondary: #FF6F00;
+}
